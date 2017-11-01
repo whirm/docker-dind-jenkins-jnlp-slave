@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+
+(/usr/local/bin/dind dockerd &> /var/log/dockerd-startup.log) &
+
+jenkins-slave $*
